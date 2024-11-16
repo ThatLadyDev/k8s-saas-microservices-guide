@@ -30,7 +30,7 @@ Follow the instructions in [local-setup.md](local-setup.md) to run all services 
 
 ## Production Setup
 
-Check [production-setup.md](production-setup.md) for steps on deploying the microservices to a Kubernetes cluster using Azure AKS.
+Check [production-setup.md](production-setup.md) for steps on deploying the microservices to a Kubernetes cluster using CIVO.
 
 ## Architecture Overview
 
