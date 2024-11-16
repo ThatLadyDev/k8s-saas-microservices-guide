@@ -4,7 +4,6 @@ Welcome to the guide for setting up a multi-tenant SaaS using microservices arch
 - [AuthoSaaS](https://github.com/ThatLadyDev/autho-saas)
 - [BillifySaaS](https://github.com/ThatLadyDev/billify-saas)
 - [TenantrixSaaS](https://github.com/ThatLadyDev/tenantrix-saas)
-- [NotifiSaaS](https://github.com/ThatLadyDev/notifi-saas)
 
 ## Prerequisites
 
