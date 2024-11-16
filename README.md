@@ -1,17 +1,17 @@
 # SaaS Microservices Guide
 
 Welcome to the guide for setting up a multi-tenant SaaS using microservices architecture! This guide will help you deploy and run the following microservices:
-- [AuthoSaaS](https://github.com/ThatLadyDev/autho-saas)
-- [BillifySaaS](https://github.com/ThatLadyDev/billify-saas)
-- [TenantrixSaaS](https://github.com/ThatLadyDev/tenantrix-saas)
+- [Authentication Service](https://github.com/ThatLadyDev/autho-saas)
+- [Billing Service](https://github.com/ThatLadyDev/billify-saas)
+- [Notification Service](https://github.com/ThatLadyDev/notifi-saas)
+- [API Middleware](https://github.com/ThatLadyDev/saas-api-middleware)
 
 ## Prerequisites
 
 Before starting, ensure you have the following installed:
-- Docker
+- Docker Desktop
 - Docker Compose (for local setup)
-- Kubernetes CLI (`kubectl`)
-- Azure CLI (for deploying to AKS)
+- Kubernetes CLI - for production setup (`kubectl`)
 
 ## Local Setup
 
