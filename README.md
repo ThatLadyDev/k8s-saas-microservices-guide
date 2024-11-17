@@ -1,4 +1,4 @@
-<p align="center"><a href="https://devfestlagos.com" target="_blank"><img src="https://devfestlagos.com/images/svg/devfest--logo.svg" width="400" alt="Devfest Lagos Logo"></a></p>
+<p align="center"><a href="https://devfestlagos.com" target="_blank"><img src="https://devfestlagos.com/images/svg/devfest--logo.svg" width="200" alt="Devfest Lagos Logo"></a></p>
 
 # Devfest Lagos 2024 Codelab - SaaS Microservices Guide
 
