@@ -9,23 +9,42 @@ The SaaS platform is designed to serve multiple tenants, with each tenant being 
 ### Services Overview
 
 The platform consists of the following microservices, all of which are built using **Laravel** for rapid development:
-1. **Autho-SaaS**  
+
+![image](https://github.com/user-attachments/assets/b299570d-981c-4fe2-9b8e-3ccf8d9898da)
+
+
+1. **Authentication Service**
+   
+   ![image](https://github.com/user-attachments/assets/cf91c5dc-b980-4211-a47a-e470a250c5b2)
+
    - **Role**: Handles user authentication, user roles, and tenant management.
    - **Responsibility**: Manages the registration, login, and access control for tenants and their users.
 
-2. **Billify-SaaS**  
+2. **Billing Service**
+
+   ![image](https://github.com/user-attachments/assets/60e5c0c3-b76a-41b3-8a4d-6f825ebae3b3)
+   
    - **Role**: Handles billing and subscription management for each tenant.
    - **Responsibility**: Manages the creation of invoices, payment processing, and subscription plans.
 
-3. **Notifi-SaaS**  
+3. **Notification - Service**
+
+   ![image](https://github.com/user-attachments/assets/6bb9bccd-4ca9-481e-bb80-6b70e6147192)
+
    - **Role**: Manages notifications and alerts for tenants.
    - **Responsibility**: Sends event-driven notifications (email, SMS, etc.) to users based on tenant-specific configurations.
 
-4. **API Middleware (API Gateway)**  
+4. **API Middleware (API Gateway)**
+   
+   ![image](https://github.com/user-attachments/assets/6ac5bb2e-a80d-4c4e-a920-1a18e5d3e7db)
+
    - **Role**: Serves as the central entry point for all external requests to the platform.
    - **Responsibility**: The API middleware application receives API requests and routes them to the appropriate microservice (e.g., **Autho-SaaS**, **Billify-SaaS**). It is responsible for handling tenant-specific requests by routing them to the right service based on the `tenant_uuid` in the API request.
 
-5. **Database Service (MySQL)**  
+5. **Database Service (MySQL)**
+
+   ![image](https://github.com/user-attachments/assets/49f3f74c-1ea8-4601-8f40-149ab5854235)
+
    - **Role**: Manages the database connections and queries for all services.
    - **Responsibility**: Handles requests and queries related to tenant-specific data, ensuring the isolation and integrity of data for each tenant. The **MySQL service** is designed to scale horizontally to support the growth of the SaaS platform and ensure optimal performance across all services.
 
@@ -120,10 +139,11 @@ The following diagrams illustrate the overall architecture, service interactions
 
 1. **Microservice Architecture**  
    ![Microservice Architecture](diagrams/microservice-architecture.png)
+   
 
-2. **Tenant Data Flow**  
+3. **Tenant Data Flow**  
    ![Tenant Data Flow](diagrams/tenant-data-flow.png)
 
-3. **API Middleware Flow**  
+4. **API Middleware Flow**  
    ![API Middleware Flow](diagrams/api-middleware-flow.png)
 
